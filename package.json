@@ -1,7 +1,7 @@
 {
 	"name": "node-debug",
 	"displayName": "Node Debug (legacy)",
-	"version": "1.44.16",
+	"version": "1.44.17",
 	"publisher": "ms-vscode",
 	"description": "%extension.description%",
 	"icon": "images/node-debug-icon.png",
@@ -34,23 +34,20 @@
 	"extensionDependencies": [
 		"ms-vscode.node-debug2"
 	],
-	"dependencies": {
-		"glob": "7.1.6",
-		"minimatch": "3.0.4",
-		"request-light": "0.2.5",
-		"source-map": "0.6.1",
-		"vscode-debugadapter": "1.44.0",
-		"vscode-nls": "4.1.1"
-	},
-	"resolutions": {
-		"gulp/**/yargs-parser": "5.0.0-security.0"
-	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Microsoft/vscode-node-debug.git"
 	},
 	"bugs": {
 		"url": "https://github.com/Microsoft/vscode-node-debug/issues"
+	},
+	"dependencies": {
+		"glob": "7.1.6",
+		"minimatch": "3.0.4",
+		"request-light": "0.2.5",
+		"source-map": "0.6.1",
+		"vscode-debugadapter": "1.45.0",
+		"vscode-nls": "4.1.1"
 	},
 	"devDependencies": {
 		"@types/mocha": "8.2.0",
@@ -72,11 +69,15 @@
 		"tsutils": "3.17.1",
 		"typescript": "~3.7.2",
 		"vsce": "^1.79.5",
-		"vscode-debugadapter-testsupport": "1.44.0",
-		"vscode-debugprotocol": "1.44.0",
+		"vscode-debugadapter-testsupport": "1.45.0",
+		"vscode-debugprotocol": "1.45.0",
 		"vscode-nls-dev": "3.3.1",
 		"webpack": "~4.44.1",
-		"webpack-cli": "~3.3.12"
+		"webpack-cli": "~3.3.12",
+		"yargs-parser": "5.0.0-security.0"
+	},
+	"resolutions": {
+		"gulp/**/yargs-parser": "^5.0.0-security.0"
 	},
 	"main": "./dist/extension.js",
 	"activationEvents": [
